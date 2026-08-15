@@ -38,7 +38,6 @@ export const Hero = () => {
       data-testid="hero-section"
       className="relative min-h-screen w-full bg-ivory overflow-hidden"
     >
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-powder/70 via-ivory to-cream" />
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 min-h-screen relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 min-h-screen items-center gap-10 lg:gap-8 pt-28 pb-20 lg:py-0">
           {/* Typography */}

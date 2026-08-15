@@ -1,6 +1,6 @@
 export const IMAGES = {
   logo: "https://customer-assets-lxgj4vgw.emergentagent.net/job_invitation-preview-2/artifacts/lb3nro4g_logo%20rose-01.png",
-  hero: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/9178914879a66ae232f591d566ffce5faf78dfb9e00981c2b6fd9fe3ad90dc20.jpeg",
+  hero: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/421ebd00310f8b203f4f7bd61e5730aaf4685fdb441fc6a830e1c1abf93cc4d2.jpeg",
   detailEmboss: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/82e1240c9c07d91ab04588461dce7ff8e2af4b48df91ef19fee5c73aa5503d02.jpeg",
   gifts: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/4105af9a5c564492a557046ea8d8ddb51e6f6c864b6c9c51e5255d5ddef11ec5.jpeg",
   finalHeld: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/d14df8536b67d34e618386e97bedae978e8dc946e12d488dac703a47327c36de.jpeg",
