@@ -3,7 +3,7 @@ import { Reveal } from "./motion";
 
 export const FinalCTA = () => {
   return (
-    <section data-testid="final-cta-section" className="bg-espresso text-cream py-28 md:py-40 overflow-hidden">
+    <section data-testid="final-cta-section" className="bg-deepRose text-cream py-28 md:py-40 overflow-hidden">
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-16 items-center">
           {/* Text */}
