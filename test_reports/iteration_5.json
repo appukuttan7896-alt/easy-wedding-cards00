@@ -1,0 +1,23 @@
+{
+  "summary": "Frontend-only regression on restructured /shop and new dedicated /shop/:slug routes. All 13 test areas verified end-to-end via Playwright on desktop (1920) and mobile (390). Shop lists 14 cards with counts (All14, Embossed3, Floral2, Minimal2, Foil2, Botanical2, Classic2, Duo1). Category pills update ?category= URL and filter; deep-link /shop?category=Foil pre-filters to 2. Sort dropdown works: price-asc first tile = The Lin (\u20b965), price-desc first tile = The Solene (\u20b9135). Search 'elodie' \u2192 1 invitation. Saved toggle present. Load-more reveals all 14. Product tile click navigates to /shop/:slug. Detail page shows breadcrumbs (home + shop), price, WhatsApp href (https://wa.me/910000...), share, favorite, thumbs, enlarge \u2192 gallery-lightbox opens and closes on Escape. Elodie has 3 variants; selecting variant-2 (Antique Silver) updates price to \u20b9130 as required. Duo Adelaide detail price = \u20b9190 (with '/ pair \u00b7 2 cards'); tile shows '\u20b9190 /pair'. Similar section shows 4 cards. Recently-viewed strip appears on both detail and /shop, persists across reload (localStorage 'ewc-recent'); current product excluded from its own recently-viewed. /shop/does-not-exist renders product-not-found. All images loaded (naturalWidth > 0). Mobile: shop grid 2 cols, similar 2 cols, product detail stacks (1 col). No console errors observed.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "WHATSAPP_NUMBER is a placeholder ('910000000000') \u2014 must be replaced before launch (already documented in code as TODO).",
+    "Shop.jsx captures `recent` in useState initializer only once on mount; if a user navigates from detail \u2192 shop via SPA link, the strip won't refresh until reload. Consider refreshing on route re-mount or on window focus for consistency.",
+    "getRecentlyViewed uses raw ids that must exactly match card.id; slugify is only used for URLs. Works today but a rename of card.id would silently drop recents. Consider persisting slugs instead."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All new testids from the restructure verified: sort-select, product-detail-page, detail-{price,whatsapp,share,favorite,enlarge}, similar-section, similar-card-<slug>, recently-viewed, recent-<slug>, breadcrumb-shop, product-not-found. Landing '/' regression not deeply retested but shop Header/Footer render on both /shop and /shop/:slug. WhatsApp number placeholder unchanged.",
+  "rca of the issue": "No issues found."
+}
