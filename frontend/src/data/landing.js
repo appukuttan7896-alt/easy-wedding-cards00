@@ -1,40 +1,40 @@
 export const IMAGES = {
   logo: "https://customer-assets-lxgj4vgw.emergentagent.net/job_invitation-preview-2/artifacts/lb3nro4g_logo%20rose-01.png",
-  hero: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/5845e225fd1b84ecee45291431e307356db641a7c63d05695722d21049bb7a6b.jpeg",
-  detailEmboss: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/6cdf06e96421a2832c14bda9d0181d60f6242dba4b89addeccea25678108c0ee.jpeg",
-  gifts: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/58b10d64d9885b21dfa8d3f9393e10363d5e5a03f7069f9eef16a6a675776238.jpeg",
-  finalHeld: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/dafaff737d56c17b7978db98ddc00c5c6351f9ea98ae95777cb5d678dd2ef563.jpeg",
+  hero: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/9178914879a66ae232f591d566ffce5faf78dfb9e00981c2b6fd9fe3ad90dc20.jpeg",
+  detailEmboss: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/82e1240c9c07d91ab04588461dce7ff8e2af4b48df91ef19fee5c73aa5503d02.jpeg",
+  gifts: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/4105af9a5c564492a557046ea8d8ddb51e6f6c864b6c9c51e5255d5ddef11ec5.jpeg",
+  finalHeld: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/d14df8536b67d34e618386e97bedae978e8dc946e12d488dac703a47327c36de.jpeg",
 };
 
 export const COLLECTION = [
   {
     name: "The Amara",
     detail: "Ivory · Embossed",
-    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/d2b2d31d1615c3c6bb94dc7b2eaa8de20df2f4c4ea5b338128bdb9663a89e403.jpeg",
+    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/a41ccce608f3ddce42bd425dcf4da4e99e3963065d178a1b23181ce98e9bbcf2.jpeg",
   },
   {
     name: "The Celeste",
     detail: "Floral · Letterpress",
-    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/492df38dabe6d29eb9b685373fca86c1d67dcedba4385ab04d0604d332b31da0.jpeg",
+    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/4ca8e6ae223bc80b4fd485ee48293e397321f8288761e10de96822bc16ce4cd2.jpeg",
   },
   {
     name: "The Noa",
     detail: "Minimal · Textured",
-    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/73f0b7f243fb52cdcbdc08e7c8f30c5aa50a4f8af9411fbcbe4771d7367f3c7c.jpeg",
+    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/74e7812a18baaf97174a8215d5514aeb70e434b9ac86f03c203bf69490edb345.jpeg",
   },
   {
     name: "The Elodie",
     detail: "Champagne · Foil",
-    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/76589e389b422872a1f281b45a2118db8f0153cf398281741c4d295660419346.jpeg",
+    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/506e64c9fae8906c4fa4690b11f1fee48d8b95d3e817eb66bd18cfba5828a67c.jpeg",
   },
   {
     name: "The Camille",
     detail: "Botanical · Pearl",
-    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/02c0ba6c14bd8e56f5c5006ac44471d5ace2a58553e21675cdb57b88ef0c3fb1.jpeg",
+    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/b65a74adaf7898222d682656a13d90bfe7b097328597f0727714bd774bd88e41.jpeg",
   },
   {
     name: "The Aurelia",
     detail: "Classic · Embossed",
-    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/ded14d8adbe0d05de3960e15bd81d31c9930ce851497acc9aba7c14e3ff38a3e.jpeg",
+    img: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/c4158f051a6092c76ab32e51662cc50fd0eb64aa0db5a986d753f45ba416cf80.jpeg",
   },
 ];

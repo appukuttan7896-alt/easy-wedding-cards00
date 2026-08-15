@@ -7,14 +7,14 @@ body {
     font-family: 'Montserrat', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #F7F3EF;
-    color: #32271F;
+    background-color: #F7F1F0;
+    color: #4A2A33;
 }
 
 @layer base {
     :root {
-        --background: 40 33% 95%;
-        --foreground: 27 25% 16%;
+        --background: 6 33% 96%;
+        --foreground: 342 28% 22%;
         --card: 40 50% 98%;
         --card-foreground: 27 25% 16%;
         --popover: 40 50% 98%;

@@ -1,0 +1,25 @@
+{
+  "summary": "Regression test for rose-dominant palette + regenerated imagery + EC logo in header/footer + cream footer. All 49 checks effectively pass. All 26 required data-testids present, all 10 images load (desktop + mobile 390x844), page height 7397px (fully scrollable), footer background computed as rgb(253,248,247) (light warm cream, avg 249), header transitions to rgba(247,241,240,0.9) after scroll, mobile menu opens with all mobile-nav-* + mobile-shop-cta links, footer instagram href points to https://instagram.com, EC logo visible top-left (64x56 with masked span). Text content verified via innerText: hero 'Some things deserve more than a message.', scroll-moment three lines, gifts 'FOR THE GUESTS' + 'For those celebrating with them.', final-cta 'This is the first one they hold.' — all present. No console errors (only a benign Lenis container-position warning). No broken images.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Global (Lenis)", "issues": ["Console warning: 'Please ensure that the container has a non-static position, like relative/fixed/absolute to ensure scroll offset is calculated correctly.' — cosmetic Lenis config warning, does not affect functionality but worth resolving by adding position:relative to Lenis wrapper."]}
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "(Optional/minor) Resolve Lenis console warning by setting the smooth-scroll wrapper to position:relative."
+  ],
+  "critical_code_review_comments": [
+    "Palette + imagery regression looks clean; rose #B07E80 mask on logo renders correctly and the cream footer (rgb(253,248,247)) provides good contrast against rose accents.",
+    "Consider adding position:relative to the Lenis wrapper element to remove the recurring console warning."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Landing page ('/') is the only real route; /shop and /gifts are intentional placeholders — do not test them. Text-content assertions on hero/gifts/final-cta return whitespace-broken strings due to per-character split-text animation spans; use innerText (which normalizes whitespace) or check for substrings within larger text blocks. All 10 images from src/data/landing.js load successfully on both desktop 1920x1080 and mobile 390x844."
+}
