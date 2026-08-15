@@ -50,7 +50,7 @@ export const Collection = () => {
             delay={0.05}
             className="font-serif text-espresso leading-[0.95] tracking-tight text-4xl sm:text-6xl lg:text-7xl"
           >
-            Find the one <span className="italic text-brass">that feels</span> like you.
+            Find the one <span className="italic text-rose">that feels</span> like you.
           </Reveal>
           <Reveal
             as="p"

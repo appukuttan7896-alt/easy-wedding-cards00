@@ -8,7 +8,7 @@ export const FinalCTA = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-16 items-center">
           {/* Text */}
           <div className="lg:col-span-6 order-2 lg:order-1">
-            <Reveal as="p" className="font-sans text-[0.68rem] uppercase tracking-[0.34em] text-champagne mb-9">
+            <Reveal as="p" className="font-sans text-[0.68rem] uppercase tracking-[0.34em] text-roseSoft mb-9">
               The Beginning
             </Reveal>
 

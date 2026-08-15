@@ -46,12 +46,12 @@ export const Hero = () => {
             className="lg:col-span-5 order-2 lg:order-1"
           >
             <motion.div variants={container} initial="hidden" animate="show">
-              <motion.p
+              <motion.img
                 variants={item}
-                className="font-sans text-[0.68rem] uppercase tracking-[0.34em] text-taupe mb-8"
-              >
-                Easy Wedding Cards
-              </motion.p>
+                src={IMAGES.logo}
+                alt="Easy Wedding Cards"
+                className="w-24 md:w-28 h-auto mb-4 -ml-2 select-none"
+              />
 
               <motion.h1
                 variants={item}
@@ -59,7 +59,7 @@ export const Hero = () => {
               >
                 Some things
                 <br />
-                deserve <span className="italic text-brass">more</span>
+                deserve <span className="italic text-rose">more</span>
                 <br />
                 than a message.
               </motion.h1>

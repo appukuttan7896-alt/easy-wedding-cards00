@@ -3,7 +3,7 @@ import { Reveal } from "./motion";
 
 export const GiftsTeaser = () => {
   return (
-    <section data-testid="gifts-section" className="bg-cream py-24 md:py-32">
+    <section data-testid="gifts-section" className="bg-powder py-24 md:py-32">
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <Reveal className="lg:col-span-7 order-1">
@@ -26,7 +26,7 @@ export const GiftsTeaser = () => {
               delay={0.05}
               className="font-serif text-espresso leading-[0.98] tracking-tight text-4xl md:text-5xl lg:text-6xl"
             >
-              For those <span className="italic text-brass">celebrating</span> with them.
+              For those <span className="italic text-rose">celebrating</span> with them.
             </Reveal>
             <Reveal
               as="p"

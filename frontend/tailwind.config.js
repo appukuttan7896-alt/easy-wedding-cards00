@@ -24,6 +24,9 @@ module.exports = {
         brass: '#B89A78',
         taupe: '#8C7767',
         espresso: '#32271F',
+        rose: '#BE8E8E',
+        roseSoft: '#E8C4C2',
+        powder: '#F3E6E3',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

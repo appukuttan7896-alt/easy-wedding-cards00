@@ -1,4 +1,5 @@
 export const IMAGES = {
+  logo: "https://customer-assets-lxgj4vgw.emergentagent.net/job_invitation-preview-2/artifacts/lb3nro4g_logo%20rose-01.png",
   hero: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/5845e225fd1b84ecee45291431e307356db641a7c63d05695722d21049bb7a6b.jpeg",
   detailEmboss: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/6cdf06e96421a2832c14bda9d0181d60f6242dba4b89addeccea25678108c0ee.jpeg",
   gifts: "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/58b10d64d9885b21dfa8d3f9393e10363d5e5a03f7069f9eef16a6a675776238.jpeg",
