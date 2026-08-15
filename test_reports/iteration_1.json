@@ -1,0 +1,23 @@
+{
+  "summary": "Frontend-only landing page for 'Easy Wedding Cards' fully verified. All 29 required data-testids present. All 10 images load (naturalWidth>0) on desktop and mobile. Page height ~7330px, all 6 sections render with substantial heights (hero 1093, scroll-moment 600, collection 3389, gifts 751, final-cta 1124, footer 373). Hero has correct copy + only /shop CTA (no gifts CTA). ScrollMoment contains the three required lines. Collection shows all 6 products (Amara/Celeste/Noa/Elodie/Camille/Aurelia) each linking to /shop with 'View Invitation' hover text. All CTA hrefs correct: header-shop-cta, hero-shop-cta, explore-cards-cta, final-shop-cta, footer-wedding-cards → /shop; explore-gifts-cta, footer-gifts → /gifts; footer-instagram → https://instagram.com. Header background transitions from transparent (rgba(0,0,0,0)) at top to ivory (rgba(247,243,239,0.9)) after scroll. Mobile (390x844) menu toggle opens menu with all nav links; hero stacks; images all load. Reduced-motion mode: window.__lenis is undefined (disabled correctly), native scroll works to bottom, all sections still render with same heights, no broken images.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Mobile menu", "issues": ["Individual mobile menu nav links lack data-testid attributes (menu itself has data-testid=mobile-menu, but inner links do not). Not requested by spec but would improve testability."]}
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Console warning from Framer Motion useScroll: 'Please ensure that the container has a non-static position, like relative/fixed/absolute to ensure scroll offset is calculated correctly.' Likely originates from Hero.jsx parallax target — add position:relative to the ref container to silence.",
+    "One 404 network resource observed on initial load (likely favicon or manifest). Non-blocking but worth cleaning up."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All landing page requirements pass. If future work adds /shop or /gifts pages, remember commercial links are currently intentional placeholders. Lenis is exposed at window.__lenis for programmatic scrolling; use window.__lenis.scrollTo(y,{immediate:true}) instead of window.scrollTo to avoid smooth-scroll fighting tests."
+}

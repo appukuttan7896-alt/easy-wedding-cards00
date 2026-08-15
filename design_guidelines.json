@@ -1,0 +1,73 @@
+{
+  "theme": "light",
+  "app_type": "landing_page",
+  "vibe": "luxury wedding editorial, contemporary fashion campaign, premium stationery brand",
+  "typography": {
+    "primary_font": "Cormorant Garamond",
+    "primary_fallback": "serif",
+    "secondary_font": "Montserrat",
+    "secondary_fallback": "sans-serif",
+    "rules": {
+      "h1": "text-5xl md:text-7xl lg:text-8xl font-serif tracking-tighter leading-none text-[#32271F]",
+      "h2": "text-4xl md:text-5xl font-serif tracking-tight leading-snug text-[#32271F]",
+      "h3": "text-2xl md:text-3xl font-serif italic text-[#8C7767]",
+      "body": "text-base md:text-lg font-sans font-light text-[#8C7767] leading-relaxed",
+      "labels": "text-xs md:text-sm font-sans uppercase tracking-[0.2em] font-medium text-[#8C7767]",
+      "emphasis": "Use italicized serif for emotional or romantic emphasis in the middle of standard serif headlines."
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#F7F3EF",
+      "secondary": "#FDFBF8"
+    },
+    "text": {
+      "primary": "#32271F",
+      "secondary": "#8C7767",
+      "accent": "#B89A78"
+    },
+    "accents": {
+      "blush": "#E4C9C1",
+      "champagne_light": "#D9C2AF",
+      "champagne_muted": "#B89A78"
+    },
+    "rules": "Avoid metallic-gold UI everywhere. Mostly use cream/ivory for backgrounds. Espresso is purely for high-contrast typography and very fine borders/lines. Blush and champagne are for subtle graphic elements or hover states."
+  },
+  "spacing_and_layout": {
+    "philosophy": "Editorial, magazine-like, generous whitespace.",
+    "section_padding": "py-24 md:py-32 lg:py-40",
+    "hero_blueprint": "Asymmetric layout. 60/40 or 70/30 split. The dominant wedding invitation photo should break the grid, overlapping slightly with the header or extending to the screen edge. Typography should float on the remaining space with generous line-heights.",
+    "collection_grid": "Asymmetric editorial spread. Do NOT use uniform standard grids. Use a CSS grid where images span different rows/columns (e.g., col-span-4 row-span-2 mixed with col-span-3 row-span-1) to create a masonry-like or staggered 'staircase' look for the 6 wedding cards.",
+    "gifts_teaser": "Horizontal orientation. A wide, cinematic image paired with an oversized serif headline and an understated text link."
+  },
+  "motion_and_interaction": {
+    "scroll_transition": "ONE prominent scroll-driven moment: When scrolling from Hero to the Collection, use lightweight CSS or Framer Motion to sequentially reveal lines of text or softly slide up the first collection images.",
+    "hover_states": "Restrained. Images should have a gentle 2-3% scale zoom on hover (`hover:scale-[1.02] transition-transform duration-700 ease-out`).",
+    "reveal_animations": "Subtle 15-20px fade-ups (`translate-y-4 opacity-0` to `translate-y-0 opacity-100`) on scroll for text blocks.",
+    "buttons": "Do not use pill-shaped solid background buttons. Use minimal text links with a 1px solid deep espresso underline that animates width on hover, or a very thin 1px bordered rectangle."
+  },
+  "components": {
+    "header": "Minimal. Transparent or solid Warm Ivory background (NO glassmorphism with heavy blur if it conflicts with the editorial look). Tiny uppercase sans-serif links.",
+    "footer": "Minimal. Just the brand name in large serif, and essential links in a single row.",
+    "product_cards": "DO NOT put everything inside cards. Products should be naked images floating on the background color, with their titles and 'View Invitation' appearing on hover or sitting elegantly below the image in minimal typography."
+  },
+  "media": {
+    "hero_image": "https://images.unsplash.com/photo-1612314578108-cdd41a612f2a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB3ZWRkaW5nJTIwaW52aXRhdGlvbiUyMGZsYXRsYXklMjBtaW5pbWFsaXN0fGVufDB8fHx8MTc4Njc3Njg2Mnww&ixlib=rb-4.1.0&q=85",
+    "featured_cards": [
+      "https://images.unsplash.com/photo-1738898179451-b5fc497f9f8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHw0fHxlbGVnYW50JTIwbWluaW1hbCUyMHdlZGRpbmclMjBpbnZpdGF0aW9uJTIwY2FyZCUyMGRlc2lnbnxlbnwwfHx8fDE3ODY3NzY4NjJ8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1741893043659-ca8b82a8b637?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwbWluaW1hbCUyMHdlZGRpbmclMjBpbnZpdGF0aW9uJTIwY2FyZCUyMGRlc2lnbnxlbnwwfHx8fDE3ODY3NzY4NjJ8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1732649124686-3bab54f79aa3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwyfHxlbGVnYW50JTIwbWluaW1hbCUyMHdlZGRpbmclMjBpbnZpdGF0aW9uJTIwY2FyZCUyMGRlc2lnbnxlbnwwfHx8fDE3ODY3NzY4NjJ8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1738898179451-b5fc497f9f8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHw0fHxlbGVnYW50JTIwbWluaW1hbCUyMHdlZGRpbmclMjBpbnZpdGF0aW9uJTIwY2FyZCUyMGRlc2lnbnxlbnwwfHx8fDE3ODY3NzY4NjJ8MA&ixlib=rb-4.1.0&q=85"
+    ],
+    "gifts_image": "https://images.unsplash.com/photo-1668127494486-f27a1d2b88f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwc3RhdGlvbmVyeSUyMGdpZnQlMjBib3glMjByaWJib258ZW58MHx8fHwxNzg2Nzc2ODYyfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic centered layouts or simplistic gradients.",
+    "Do not use Shadcn card UI with borders and shadows for the products; keep them completely flat and integrated into the layout (naked images).",
+    "Use raw HTML/Tailwind for the marketing layouts to achieve the required asymmetric editorial look.",
+    "Never use purely transparent backgrounds over elements where content overlaps. Use a solid background matching the section.",
+    "Add 'data-testid' to all interactive and key informational elements (e.g., 'data-testid=\"hero-cta-button\"').",
+    "Implement Framer Motion ONLY for the hero-to-collection scroll moment and subtle 15-20px fade-ups. Keep it strictly restrained and elegant.",
+    "Ensure headings do not use Inter, Roboto, or generic sans-serifs. Must use the defined Serif."
+  ]
+}
