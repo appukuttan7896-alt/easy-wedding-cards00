@@ -8,13 +8,13 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #F5EFE7;
-    color: #45222E;
+    color: #26202A;
 }
 
 @layer base {
     :root {
         --background: 36 35% 93%;
-        --foreground: 339 34% 20%;
+        --foreground: 276 14% 15%;
         --card: 40 50% 98%;
         --card-foreground: 27 25% 16%;
         --popover: 40 50% 98%;

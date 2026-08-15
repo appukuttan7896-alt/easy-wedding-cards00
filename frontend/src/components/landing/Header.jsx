@@ -74,7 +74,7 @@ export const Header = () => {
             <a
               href="/shop"
               data-testid="header-shop-cta"
-              className="group arrow-parent inline-flex items-center gap-2 border border-espresso/70 px-6 py-2.5 font-sans text-[0.68rem] uppercase tracking-[0.22em] text-espresso transition-colors duration-500 hover:bg-rose hover:border-rose hover:text-cream"
+              className="group arrow-parent inline-flex items-center gap-2 border border-espresso/70 px-6 py-2.5 font-sans text-[0.68rem] uppercase tracking-[0.22em] text-espresso transition-colors duration-500 hover:bg-espresso hover:border-espresso hover:text-cream"
             >
               Shop Cards
             </a>

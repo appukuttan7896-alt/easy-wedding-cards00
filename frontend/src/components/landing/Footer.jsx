@@ -29,7 +29,7 @@ export const Footer = () => {
                 maskSize: "contain",
               }}
             />
-            <p className="mt-5 font-serif italic text-lg md:text-xl text-rose">
+            <p className="mt-5 font-serif italic text-lg md:text-xl text-taupe">
               Invitations for beautiful beginnings.
             </p>
           </div>

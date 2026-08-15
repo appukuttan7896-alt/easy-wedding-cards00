@@ -82,7 +82,7 @@ export const Hero = () => {
                 <a
                   href="/shop"
                   data-testid="hero-shop-cta"
-                  className="group arrow-parent inline-flex items-center gap-3 border border-espresso px-8 py-4 font-sans text-[0.72rem] uppercase tracking-[0.24em] text-espresso transition-colors duration-500 hover:bg-rose hover:border-rose hover:text-cream"
+                  className="group arrow-parent inline-flex items-center gap-3 border border-espresso px-8 py-4 font-sans text-[0.72rem] uppercase tracking-[0.24em] text-espresso transition-colors duration-500 hover:bg-espresso hover:border-espresso hover:text-cream"
                 >
                   Shop Wedding Cards
                   <span className="arrow-move">&rarr;</span>
