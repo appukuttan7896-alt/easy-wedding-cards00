@@ -42,7 +42,7 @@ export const Collection = () => {
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
         {/* Heading */}
         <div className="max-w-4xl">
-          <Reveal as="p" className="font-sans text-[0.68rem] uppercase tracking-[0.34em] text-taupe mb-7">
+          <Reveal as="p" className="font-sans text-[0.68rem] uppercase tracking-[0.34em] text-rose mb-7">
             The Collection
           </Reveal>
           <Reveal

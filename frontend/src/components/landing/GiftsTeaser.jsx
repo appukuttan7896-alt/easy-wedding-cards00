@@ -18,7 +18,7 @@ export const GiftsTeaser = () => {
           </Reveal>
 
           <div className="lg:col-span-5 order-2">
-            <Reveal as="p" className="font-sans text-[0.68rem] uppercase tracking-[0.34em] text-taupe mb-7">
+            <Reveal as="p" className="font-sans text-[0.68rem] uppercase tracking-[0.34em] text-rose mb-7">
               For the Guests
             </Reveal>
             <Reveal

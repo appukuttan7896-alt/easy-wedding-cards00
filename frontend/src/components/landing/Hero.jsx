@@ -38,7 +38,8 @@ export const Hero = () => {
       data-testid="hero-section"
       className="relative min-h-screen w-full bg-ivory overflow-hidden"
     >
-      <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 min-h-screen">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-powder/70 via-ivory to-cream" />
+      <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 min-h-screen relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 min-h-screen items-center gap-10 lg:gap-8 pt-28 pb-20 lg:py-0">
           {/* Typography */}
           <motion.div
@@ -46,12 +47,12 @@ export const Hero = () => {
             className="lg:col-span-5 order-2 lg:order-1"
           >
             <motion.div variants={container} initial="hidden" animate="show">
-              <motion.img
+              <motion.p
                 variants={item}
-                src={IMAGES.logo}
-                alt="Easy Wedding Cards"
-                className="w-24 md:w-28 h-auto mb-4 -ml-2 select-none"
-              />
+                className="font-sans text-[0.68rem] uppercase tracking-[0.34em] text-rose mb-8"
+              >
+                Easy Wedding Cards
+              </motion.p>
 
               <motion.h1
                 variants={item}
@@ -82,7 +83,7 @@ export const Hero = () => {
                 <a
                   href="/shop"
                   data-testid="hero-shop-cta"
-                  className="group arrow-parent inline-flex items-center gap-3 border border-espresso px-8 py-4 font-sans text-[0.72rem] uppercase tracking-[0.24em] text-espresso transition-colors duration-500 hover:bg-espresso hover:text-cream"
+                  className="group arrow-parent inline-flex items-center gap-3 border border-espresso px-8 py-4 font-sans text-[0.72rem] uppercase tracking-[0.24em] text-espresso transition-colors duration-500 hover:bg-rose hover:border-rose hover:text-cream"
                 >
                   Shop Wedding Cards
                   <span className="arrow-move">&rarr;</span>

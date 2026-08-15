@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { IMAGES } from "../../data/landing";
 
 const NAV = [
   { label: "Wedding Cards", href: "/shop", primary: true },
@@ -32,9 +33,24 @@ export const Header = () => {
           <a
             href="/"
             data-testid="logo-link"
-            className="font-sans text-[0.7rem] md:text-xs uppercase tracking-[0.32em] text-espresso font-medium"
+            className="flex items-center"
           >
-            Easy Wedding Cards
+            <span
+              role="img"
+              aria-label="Easy Wedding Cards"
+              className="block h-12 w-14 md:h-14 md:w-16"
+              style={{
+                backgroundColor: "#B07E80",
+                WebkitMaskImage: `url("${IMAGES.logo}")`,
+                maskImage: `url("${IMAGES.logo}")`,
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+                WebkitMaskPosition: "center",
+                maskPosition: "center",
+                WebkitMaskSize: "contain",
+                maskSize: "contain",
+              }}
+            />
           </a>
 
           <nav className="hidden md:flex items-center gap-9">
@@ -58,7 +74,7 @@ export const Header = () => {
             <a
               href="/shop"
               data-testid="header-shop-cta"
-              className="group arrow-parent inline-flex items-center gap-2 border border-espresso/70 px-6 py-2.5 font-sans text-[0.68rem] uppercase tracking-[0.22em] text-espresso transition-colors duration-500 hover:bg-espresso hover:text-cream"
+              className="group arrow-parent inline-flex items-center gap-2 border border-espresso/70 px-6 py-2.5 font-sans text-[0.68rem] uppercase tracking-[0.22em] text-espresso transition-colors duration-500 hover:bg-rose hover:border-rose hover:text-cream"
             >
               Shop Cards
             </a>

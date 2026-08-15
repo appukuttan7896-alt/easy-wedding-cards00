@@ -9,16 +9,27 @@ const LINKS = [
 
 export const Footer = () => {
   return (
-    <footer data-testid="site-footer" className="bg-espresso text-cream border-t border-cream/10">
+    <footer data-testid="site-footer" className="bg-cream text-espresso border-t border-espresso/10">
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 py-16 md:py-20">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10">
           <div>
-            <img
-              src={IMAGES.logo}
-              alt="Easy Wedding Cards"
-              className="w-44 md:w-52 h-auto select-none"
+            <span
+              role="img"
+              aria-label="Easy Wedding Cards"
+              className="block h-28 w-32 md:h-32 md:w-40"
+              style={{
+                backgroundColor: "#B07E80",
+                WebkitMaskImage: `url("${IMAGES.logo}")`,
+                maskImage: `url("${IMAGES.logo}")`,
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+                WebkitMaskPosition: "left center",
+                maskPosition: "left center",
+                WebkitMaskSize: "contain",
+                maskSize: "contain",
+              }}
             />
-            <p className="mt-5 font-serif italic text-lg md:text-xl text-roseSoft">
+            <p className="mt-5 font-serif italic text-lg md:text-xl text-rose">
               Invitations for beautiful beginnings.
             </p>
           </div>
@@ -29,7 +40,7 @@ export const Footer = () => {
                 key={l.label}
                 href={l.href}
                 data-testid={`footer-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
-                className="link-underline font-sans text-[0.68rem] uppercase tracking-[0.22em] text-cream/70 hover:text-cream transition-colors duration-300"
+                className="link-underline font-sans text-[0.68rem] uppercase tracking-[0.22em] text-taupe hover:text-espresso transition-colors duration-300"
               >
                 {l.label}
               </a>
@@ -37,11 +48,11 @@ export const Footer = () => {
           </nav>
         </div>
 
-        <div className="mt-14 pt-8 border-t border-cream/10 flex flex-col sm:flex-row justify-between gap-3">
-          <p className="font-sans text-[0.62rem] uppercase tracking-[0.2em] text-cream/40">
+        <div className="mt-14 pt-8 border-t border-espresso/10 flex flex-col sm:flex-row justify-between gap-3">
+          <p className="font-sans text-[0.62rem] uppercase tracking-[0.2em] text-taupe/70">
             &copy; {new Date().getFullYear()} Easy Wedding Cards
           </p>
-          <p className="font-sans text-[0.62rem] uppercase tracking-[0.2em] text-cream/40">
+          <p className="font-sans text-[0.62rem] uppercase tracking-[0.2em] text-taupe/70">
             The first glimpse of your wedding.
           </p>
         </div>
