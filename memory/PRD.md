@@ -37,6 +37,10 @@ Respect prefers-reduced-motion. Mobile designed (not compressed).
 - Minimal espresso footer.
 - Verified by testing agent: 100% frontend pass, all sections render, all images load, all links correct, mobile + reduced-motion OK.
 
+## Shop Page (2026-06)
+- `/shop` route pulling from `src/data/cards.json` (14 cards).
+- Features: category circles + `?category=` URL sync, live search, sort (featured/price asc/desc), favorites with localStorage persistence + favorites-only filter, load-more pagination (PAGE_SIZE 8), quick-view modal (gallery thumbnails, variant selector, size/material, ₹ pricing, Odambady pair logic, WhatsApp order, Share, `#card=` deep-link), fullscreen lightbox with keyboard nav. Themed in ivory/ink/rose; verified 100% (iteration_3).
+
 ## Backlog / Remaining
 - P0: none for the landing page (scope complete).
 - P1: Build `/shop` (wedding card catalogue + product detail).

@@ -1,0 +1,198 @@
+[
+  {
+    "id": "The Amara",
+    "category": "Embossed",
+    "price": 85,
+    "featured": true,
+    "description": "A serene ivory invitation with crisp blind embossing and a whisper of dusty rose. Understated, tactile and timeless.",
+    "size": "5\" × 7\"",
+    "material": "Cotton Savoy 300gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/a41ccce608f3ddce42bd425dcf4da4e99e3963065d178a1b23181ce98e9bbcf2.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/82e1240c9c07d91ab04588461dce7ff8e2af4b48df91ef19fee5c73aa5503d02.jpeg"
+    ],
+    "variants": [
+      { "name": "Single Card", "size": "5\" × 7\"", "material": "Cotton Savoy 300gsm", "price": 85 },
+      { "name": "With Envelope", "size": "5.5\" × 7.5\"", "material": "Cotton Savoy + Vellum", "price": 110 }
+    ]
+  },
+  {
+    "id": "The Celeste",
+    "category": "Floral",
+    "price": 95,
+    "featured": true,
+    "description": "Soft pressed botanicals in blush letterpress. Romantic without ever tipping into ornate.",
+    "size": "5\" × 7\"",
+    "material": "Textured Rag 320gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/4ca8e6ae223bc80b4fd485ee48293e397321f8288761e10de96822bc16ce4cd2.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/b65a74adaf7898222d682656a13d90bfe7b097328597f0727714bd774bd88e41.jpeg"
+    ]
+  },
+  {
+    "id": "The Noa",
+    "category": "Minimal",
+    "price": 70,
+    "featured": false,
+    "description": "Heavy deckled-edge cotton with a single line of modern type. For the couple who love quiet things.",
+    "size": "5\" × 7\"",
+    "material": "Handmade Deckle 350gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/74e7812a18baaf97174a8215d5514aeb70e434b9ac86f03c203bf69490edb345.jpeg"
+    ]
+  },
+  {
+    "id": "The Elodie",
+    "category": "Foil",
+    "price": 120,
+    "featured": true,
+    "description": "Champagne-blush paper finished with a matte rose-gold script. Gentle shimmer, never gaudy.",
+    "size": "5\" × 7.5\"",
+    "material": "Pearl Stock 300gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/506e64c9fae8906c4fa4690b11f1fee48d8b95d3e817eb66bd18cfba5828a67c.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/986d285ff5cc2c8de56e0f65630a7f0ea0a2edb35e0b985b276a5cc138632774.jpeg"
+    ],
+    "variants": [
+      { "name": "Rose Gold Foil", "material": "Pearl Stock 300gsm", "price": 120 },
+      { "name": "Blush Foil", "material": "Pearl Stock 300gsm", "price": 120 },
+      { "name": "Antique Silver", "material": "Pearl Stock 300gsm", "price": 130 }
+    ]
+  },
+  {
+    "id": "The Camille",
+    "category": "Botanical",
+    "price": 90,
+    "featured": false,
+    "description": "Pearl-white card with softly pressed leaves and a blush hush. Botanical calm for a garden celebration.",
+    "size": "5\" × 7\"",
+    "material": "Pearl Rag 300gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/b65a74adaf7898222d682656a13d90bfe7b097328597f0727714bd774bd88e41.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/4ca8e6ae223bc80b4fd485ee48293e397321f8288761e10de96822bc16ce4cd2.jpeg"
+    ]
+  },
+  {
+    "id": "The Aurelia",
+    "category": "Embossed",
+    "price": 100,
+    "featured": true,
+    "description": "A classic engraved wreath, timeless and warm. The invitation your guests will keep.",
+    "size": "5\" × 7.5\"",
+    "material": "Cotton Savoy 350gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/c4158f051a6092c76ab32e51662cc50fd0eb64aa0db5a986d753f45ba416cf80.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/421ebd00310f8b203f4f7bd61e5730aaf4685fdb441fc6a830e1c1abf93cc4d2.jpeg"
+    ]
+  },
+  {
+    "id": "The Solene",
+    "category": "Foil",
+    "price": 135,
+    "featured": false,
+    "description": "An editorial envelope suite sealed with a dusty-rose wax monogram. First impressions, perfected.",
+    "size": "5.5\" × 7.5\"",
+    "material": "Cotton + Wax Seal",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/986d285ff5cc2c8de56e0f65630a7f0ea0a2edb35e0b985b276a5cc138632774.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/506e64c9fae8906c4fa4690b11f1fee48d8b95d3e817eb66bd18cfba5828a67c.jpeg"
+    ],
+    "variants": [
+      { "name": "Blush Wax Seal", "material": "Cotton + Wax Seal", "price": 135 },
+      { "name": "Ivory Wax Seal", "material": "Cotton + Wax Seal", "price": 135 }
+    ]
+  },
+  {
+    "id": "The Rosea",
+    "category": "Floral",
+    "price": 88,
+    "featured": false,
+    "description": "Watercolour roses bleeding softly into ivory cotton. Painterly, delicate, unmistakably romantic.",
+    "size": "5\" × 7\"",
+    "material": "Watercolour Rag 300gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/9178914879a66ae232f591d566ffce5faf78dfb9e00981c2b6fd9fe3ad90dc20.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/4ca8e6ae223bc80b4fd485ee48293e397321f8288761e10de96822bc16ce4cd2.jpeg"
+    ]
+  },
+  {
+    "id": "The Lin",
+    "category": "Minimal",
+    "price": 65,
+    "featured": false,
+    "description": "Bare linen-pressed card, one name, all the space in the world. Modern restraint.",
+    "size": "5\" × 7\"",
+    "material": "Linen Press 300gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/74e7812a18baaf97174a8215d5514aeb70e434b9ac86f03c203bf69490edb345.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/82e1240c9c07d91ab04588461dce7ff8e2af4b48df91ef19fee5c73aa5503d02.jpeg"
+    ]
+  },
+  {
+    "id": "The Marguerite",
+    "category": "Classic",
+    "price": 110,
+    "featured": true,
+    "description": "A traditional engraved suite with a filigree border, reimagined in warm ivory. Heritage, softened.",
+    "size": "5\" × 7.5\"",
+    "material": "Cotton Savoy 350gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/c4158f051a6092c76ab32e51662cc50fd0eb64aa0db5a986d753f45ba416cf80.jpeg"
+    ]
+  },
+  {
+    "id": "The Fern",
+    "category": "Botanical",
+    "price": 92,
+    "featured": false,
+    "description": "Eucalyptus and dried stems pressed against handmade paper. Bring the garden to the table.",
+    "size": "5\" × 7\"",
+    "material": "Handmade Deckle 320gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/421ebd00310f8b203f4f7bd61e5730aaf4685fdb441fc6a830e1c1abf93cc4d2.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/b65a74adaf7898222d682656a13d90bfe7b097328597f0727714bd774bd88e41.jpeg"
+    ]
+  },
+  {
+    "id": "The Adelaide",
+    "category": "Odambady",
+    "price": 95,
+    "featured": true,
+    "description": "Our signature paired suite — a matching bride & groom invitation, sold as a pair. Embossed wreath, wax seal and soft rose ribbon.",
+    "size": "5\" × 7.5\"",
+    "material": "Cotton + Wax Seal",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/986d285ff5cc2c8de56e0f65630a7f0ea0a2edb35e0b985b276a5cc138632774.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/a41ccce608f3ddce42bd425dcf4da4e99e3963065d178a1b23181ce98e9bbcf2.jpeg"
+    ],
+    "variants": [
+      { "name": "Rose Ribbon", "material": "Cotton + Wax Seal", "price": 95 },
+      { "name": "Ivory Ribbon", "material": "Cotton + Wax Seal", "price": 95 }
+    ]
+  },
+  {
+    "id": "The Verona",
+    "category": "Classic",
+    "price": 105,
+    "featured": false,
+    "description": "An Italianate engraved crest on warm cream. Quietly grand, made for an evening celebration.",
+    "size": "5\" × 7.5\"",
+    "material": "Cotton Savoy 350gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/421ebd00310f8b203f4f7bd61e5730aaf4685fdb441fc6a830e1c1abf93cc4d2.jpeg"
+    ]
+  },
+  {
+    "id": "The Pearl",
+    "category": "Embossed",
+    "price": 98,
+    "featured": false,
+    "description": "Subtle pearl-ivory embossing with a debossed monogram. Understated luxury you can feel.",
+    "size": "5\" × 7\"",
+    "material": "Pearl Rag 320gsm",
+    "images": [
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/82e1240c9c07d91ab04588461dce7ff8e2af4b48df91ef19fee5c73aa5503d02.jpeg",
+      "https://static.prod-images.emergentagent.com/jobs/00fa5cfb-f769-4b0e-8f6e-c94911d2f988/images/c4158f051a6092c76ab32e51662cc50fd0eb64aa0db5a986d753f45ba416cf80.jpeg"
+    ]
+  }
+]
