@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Heart, Share2, ArrowUpRight, ArrowLeft } from "lucide-react";
+import { Heart, Share2, ArrowUpRight, ArrowLeft, ArrowRight, Feather, Clock, Sparkles } from "lucide-react";
 import { toast } from "sonner";
 import { Toaster } from "../components/ui/sonner";
 import { Header } from "../components/landing/Header";
@@ -86,6 +86,20 @@ export default function ProductDetail() {
   const pair = isPair(card);
   const activeVar = card.variants?.[variantIdx];
   const basePrice = activeVar?.price ?? card.price;
+
+  const catIndex = cards.findIndex((c) => c.id === card.id);
+  const prev = catIndex > 0 ? cards[catIndex - 1] : null;
+  const next = catIndex >= 0 && catIndex < cards.length - 1 ? cards[catIndex + 1] : null;
+  const PRINTING = {
+    Embossed: "Blind embossing",
+    Foil: "Matte foil",
+    Floral: "Letterpress",
+    Botanical: "Letterpress",
+    Minimal: "Debossed",
+    Classic: "Engraved",
+    Duo: "Embossing & wax seal",
+  };
+  const printing = PRINTING[card.category] || "Letterpress";
 
   const shareCard = async () => {
     const url = `${window.location.origin}/shop/${slugify(card.id)}`;
@@ -258,6 +272,92 @@ export default function ProductDetail() {
               </Link>
             </div>
           </div>
+
+          {/* Assurance */}
+          <div
+            className="mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 border-y border-espresso/10 py-8"
+            data-testid="assurance-strip"
+          >
+            {[
+              { Icon: Feather, t: "Handcrafted to order", s: "Each suite is made for you, by hand." },
+              { Icon: Clock, t: "Ready in 5–7 days", s: "Carefully produced and quality-checked." },
+              { Icon: Sparkles, t: "Samples on request", s: "Feel the paper before you decide." },
+            ].map(({ Icon, t, s }) => (
+              <div key={t} className="flex items-start gap-3">
+                <Icon size={20} strokeWidth={1.3} className="text-rose mt-0.5 shrink-0" />
+                <div>
+                  <p className="font-sans text-[0.7rem] uppercase tracking-[0.16em] text-espresso">{t}</p>
+                  <p className="mt-1 font-sans font-light text-xs text-taupe leading-relaxed">{s}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* The craft */}
+          <section className="mt-20 md:mt-28 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16" data-testid="craft-section">
+            <div>
+              <p className="font-sans text-[0.66rem] uppercase tracking-[0.3em] text-rose mb-5">The craft</p>
+              <h2 className="font-serif text-espresso text-4xl md:text-5xl leading-[0.98]">
+                Made slowly, <span className="italic">by hand.</span>
+              </h2>
+              <p className="mt-6 font-sans font-light text-base text-taupe leading-relaxed max-w-md">
+                Every invitation is pressed to order on heavyweight cotton paper, finished by hand and checked sheet by
+                sheet. No mass printing, no shortcuts — only the quiet detail your guests will feel the moment they open
+                it.
+              </p>
+            </div>
+            <dl className="grid grid-cols-1 divide-y divide-espresso/10 border-t border-espresso/10 self-start w-full">
+              {[
+                ["Paper", activeVar?.material ?? card.material ?? "Cotton rag 300gsm"],
+                ["Dimensions", activeVar?.size ?? card.size ?? '5" × 7"'],
+                ["Printing", printing],
+                ["Envelope", "Included · hand-lined"],
+                ["Made to order", "5–7 days"],
+              ].map(([k, v]) => (
+                <div key={k} className="flex items-center justify-between py-4">
+                  <dt className="font-sans text-[0.62rem] uppercase tracking-[0.18em] text-taupe">{k}</dt>
+                  <dd className="font-serif text-lg text-espresso">{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+
+          {/* Prev / Next */}
+          {(prev || next) && (
+            <nav
+              className="mt-20 md:mt-28 grid grid-cols-2 gap-6 border-t border-espresso/10 pt-10"
+              data-testid="prev-next-nav"
+            >
+              <div>
+                {prev && (
+                  <Link to={`/shop/${slugify(prev.id)}`} data-testid="prev-product" className="group inline-flex flex-col">
+                    <span className="font-sans text-[0.58rem] uppercase tracking-[0.2em] text-taupe mb-2 inline-flex items-center gap-2">
+                      <ArrowLeft size={12} strokeWidth={1.5} /> Previous
+                    </span>
+                    <span className="font-serif text-2xl md:text-3xl text-espresso group-hover:text-rose transition-colors">
+                      {prev.id}
+                    </span>
+                  </Link>
+                )}
+              </div>
+              <div className="text-right">
+                {next && (
+                  <Link
+                    to={`/shop/${slugify(next.id)}`}
+                    data-testid="next-product"
+                    className="group inline-flex flex-col items-end ml-auto"
+                  >
+                    <span className="font-sans text-[0.58rem] uppercase tracking-[0.2em] text-taupe mb-2 inline-flex items-center gap-2">
+                      Next <ArrowRight size={12} strokeWidth={1.5} />
+                    </span>
+                    <span className="font-serif text-2xl md:text-3xl text-espresso group-hover:text-rose transition-colors">
+                      {next.id}
+                    </span>
+                  </Link>
+                )}
+              </div>
+            </nav>
+          )}
 
           {/* You may also like */}
           {similar.length > 0 && (

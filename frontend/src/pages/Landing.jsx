@@ -37,7 +37,7 @@ export default function Landing() {
 
   return (
     <div className="App bg-ivory" data-testid="landing-page">
-      <Header />
+      <Header heroLogo />
       <main>
         <Hero />
         <ScrollMoment />

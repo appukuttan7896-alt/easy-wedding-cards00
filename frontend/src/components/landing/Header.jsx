@@ -10,7 +10,7 @@ const NAV = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const Header = () => {
+export const Header = ({ heroLogo = false }) => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -29,7 +29,7 @@ export const Header = () => {
       }`}
     >
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
-        <div className="flex h-16 md:h-20 items-center justify-between">
+        <div className={`flex items-center justify-between transition-all duration-500 ${heroLogo && !scrolled ? "h-24 md:h-32" : "h-16 md:h-20"}`}>
           <a
             href="/"
             data-testid="logo-link"
@@ -38,7 +38,9 @@ export const Header = () => {
             <span
               role="img"
               aria-label="Easy Wedding Cards"
-              className="block h-12 w-14 md:h-14 md:w-16"
+              className={`block transition-all duration-500 ${
+                heroLogo && !scrolled ? "h-16 w-20 md:h-24 md:w-28" : "h-11 w-14 md:h-12 md:w-16"
+              }`}
               style={{
                 backgroundColor: "#B07E80",
                 WebkitMaskImage: `url("${IMAGES.logo}")`,

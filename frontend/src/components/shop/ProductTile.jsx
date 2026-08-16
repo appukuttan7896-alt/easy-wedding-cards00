@@ -1,16 +1,23 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
 import { imgUrl, slugify, isPair, unit, money } from "../../lib/shop";
 
 export const ProductTile = memo(function ProductTile({ c, isFavorite, onToggleFavorite, testidPrefix = "product-card" }) {
   const pair = isPair(c);
   return (
-    <Link
-      to={`/shop/${slugify(c.id)}`}
-      data-testid={`${testidPrefix}-${slugify(c.id)}`}
-      className="group block"
+    <motion.div
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-8% 0px" }}
+      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
     >
+      <Link
+        to={`/shop/${slugify(c.id)}`}
+        data-testid={`${testidPrefix}-${slugify(c.id)}`}
+        className="group block"
+      >
       <div className="relative overflow-hidden aspect-[4/5] bg-cream">
         <img
           src={imgUrl(c.images[0])}
@@ -48,5 +55,6 @@ export const ProductTile = memo(function ProductTile({ c, isFavorite, onToggleFa
         </p>
       </div>
     </Link>
+    </motion.div>
   );
 });
